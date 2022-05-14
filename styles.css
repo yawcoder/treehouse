@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu:wght@500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -10,18 +11,20 @@
 body{
     font-family: "montserrat", sans-serif;
 }
+
 nav{
-    background: #0082e6;
+    background: white;
     height: 80px;
     width: 100%;
 }
 
 label.logo{
-    color: white;
+    font-family: "ubuntu", sans-serif;
+    color: black;
     font-size: 25px;
     line-height: 80px;
     padding: 0 50px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 nav ul{
@@ -36,21 +39,21 @@ nav ul li{
 }
 
 nav ul li a{
-    color: white;
+    color: rgb(36, 32, 120);
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 a.active, a:hover{
-    background: #1b9bff;
+    text-decoration: underline;
     transition: .5s
 }
 
 .checkbtn{
     font-size: 30px;
-    color: white;
+    color: #0558aa;
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -60,6 +63,14 @@ a.active, a:hover{
 
 #check{
     display: none;
+}
+
+.freetrialbutton{
+        background-color: #0558aa;
+        color: white;
+        padding: 7px 13px;
+        font-size: 17px;
+        border-radius: 5px;
 }
 
 @media(max-width: 952px){
@@ -81,7 +92,7 @@ a.active, a:hover{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #2c3e50;
+        background: white;
         top: 80px;
         left: -100%;
         text-align: center;
@@ -102,4 +113,22 @@ a.active, a:hover{
     #check:checked ~ ul{
         left: 0;
     }
+    #freetrial{
+        background-color: #0558aa;
+        color: white;
+        padding: 7px 13px;
+        margin-right: 30px;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+    #navfreetrial{
+        display: none;
+    }
+}
+
+.section{
+    background: url(sec1.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
 }
