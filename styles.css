@@ -128,6 +128,7 @@ main{
     margin-top: 10px;
 }
 
+/*first section below navigation on homepage*/
 .sec1{
     background: url(sec1.jpg) no-repeat;
     background-size: cover;
@@ -138,10 +139,11 @@ main{
     font-family: "Nunito", sans-serif;
 }
 
+/*First line of text on section below nav*/
 .sech2 {
     font-size: 20px;
 }
-
+/*Second line of text on section below nav*/
 .sec1h1{
     font-size: 50px;
     margin: auto;
@@ -152,10 +154,9 @@ main{
     background-color: white;
     margin: auto;
     margin-top: -100px;
-    padding: 0 40px 0 40px;
+    padding: 0 40px 20px 40px;
     width: 55%;
     height: 100%;
-    line-height: 50px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.4);
 }
@@ -172,7 +173,7 @@ main{
     border-top-right-radius: 5px;
 }
 .email{
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
     font-family: "Nunito", sans-serif;
     font-weight: bold;
     font-size: 18px;
@@ -190,7 +191,7 @@ main{
 
 .formbutton{
     background-color: rgba(108, 78, 109, 0.7);
-    margin: 0 0 0 10px;
+    margin: 0 0 20px 10px;
     padding: 8px 26px;
     color: white;
     font-family: "Nunito", sans-serif;
@@ -213,5 +214,26 @@ main{
     .sech2{
         font-weight: bold;
         font-size: 50px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .inputbox{
+        display: block;
+        width: 100%;
+    }
+    .formbutton {
+        display: block;
+        width: 100%;
+        margin: 15px 0 20px 0;
+    }
+    .tryfree{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 780px) {
+    .formdiv{
+        width: 75%;
     }
 }
