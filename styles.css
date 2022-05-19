@@ -161,6 +161,12 @@ main{
     box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.4);
 }
 
+@media(max-width: 780px) {
+    .formdiv{
+        width: 75%;
+    }
+}
+
 .tryfree{
     margin: 0 -40px 0 -40px;
     background-color: #1a1a1a;
@@ -232,8 +238,9 @@ main{
     }
 }
 
-@media(max-width: 780px) {
-    .formdiv{
-        width: 75%;
-    }
+.clipartdiv{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0;
+
 }
