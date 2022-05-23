@@ -42,10 +42,11 @@ nav ul li a{
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: none;
+    text-decoration: none !important;
 }
 
 a.active, a:hover{
-    text-decoration: underline;
+    text-decoration: underline !important;
     transition: .5s
 }
 
@@ -63,12 +64,18 @@ a.active, a:hover{
     display: none;
 }
 
+/*Styling for free trial button on desktop*/
 .freetrialbutton{
         background-color: #0558aa;
         color: white;
         padding: 7px 13px;
         font-size: 17px;
         border-radius: 5px;
+}
+
+/*Overides bootstrap hover color*/
+.freetrialbutton:hover{
+    color: white !important;
 }
 
 @media(max-width: 952px){
@@ -111,6 +118,7 @@ a.active, a:hover{
     #check:checked ~ ul{
         left: 0;
     }
+    /*Styling for freetrial button on mobile*/
     #freetrial{
         background-color: #0558aa;
         color: white;
@@ -118,7 +126,13 @@ a.active, a:hover{
         margin-right: 30px;
         font-size: 17px;
         border-radius: 5px;
+        text-decoration: none !important;
     }
+
+    #freetrial:hover{
+        text-decoration: underline !important;
+    }
+    /*Makes free trial button on desktop disappear on mobile*/
     #navfreetrial{
         display: none;
     }
