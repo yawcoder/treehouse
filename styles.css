@@ -258,3 +258,52 @@ main{
     margin: 50px 0 0 0;
 
 }
+
+/*Entire cards area div*/
+.carddiv{
+    background-color: #423939;
+}
+
+/*Card headers flexing*/
+.cardheader{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0558aa;
+    color: white;
+}
+
+/*Styling for generic card header*/
+.cardheadergeneric{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+}
+
+/*styling for card seals*/
+.cardseal{
+    border-radius: 50%;
+    margin: -35px 0 -35px 0;
+}
+
+/*Styling for generic card seal*/
+.cardsealgeneric{
+    border-radius: 50%;
+    margin: -35px auto;
+}
+
+@media(max-width: 952px){
+    .carddiv{
+        display: none;
+    }
+    .carddiv2{
+        
+    }
+}
+
+@media(min-width: 953px){
+    .carddiv2{
+        display: none;
+    }
+}
