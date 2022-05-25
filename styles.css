@@ -261,7 +261,23 @@ main{
 
 /*Entire cards area div*/
 .carddiv{
-    background-color: #423939;
+    background-color: #25332f;
+    padding: 50px 0 0 0;
+    margin: 50px 0 0 0;
+}
+
+/*First text of card div*/
+.carddivheading{
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.cardprice{
+    font-family: "Nunito", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
 }
 
 /*Card headers flexing*/
@@ -271,6 +287,10 @@ main{
     align-items: center;
     background-color: #0558aa;
     color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding-left: 1px;
+    padding-right: 1px;
 }
 
 /*Styling for generic card header*/
@@ -284,26 +304,28 @@ main{
 /*styling for card seals*/
 .cardseal{
     border-radius: 50%;
-    margin: -35px 0 -35px 0;
+    margin: -30px 0 -30px 0;
+}
+
+/*Reduces seal sizes on small screens*/
+@media(max-width: 940px){
+    .cardseal{
+        max-width: 80px;
+    }
+    .cardheadergeneric{
+        height: 38px;
+    }
 }
 
 /*Styling for generic card seal*/
 .cardsealgeneric{
     border-radius: 50%;
-    margin: -35px auto;
+    margin: -30px auto;
 }
 
-@media(max-width: 952px){
-    .carddiv{
-        display: none;
-    }
-    .carddiv2{
-        
-    }
-}
-
-@media(min-width: 953px){
-    .carddiv2{
-        display: none;
+/*Reduces generic seal size on small screens*/
+@media(max-width: 940px){
+    .cardsealgeneric{
+        max-width: 80px;
     }
 }
