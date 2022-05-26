@@ -280,8 +280,53 @@ main{
     color: white;
 }
 
+/*Card styling*/
+.card{
+    border: none;
+    border-radius: 0 0 5px 5px;
+}
+
+/*Card title styling for first 3 cards*/
+.cardtitletop{
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 30px 0 0 0;
+    color: #304e8f !important;
+}
+/*Card title styling for last cards 4 & 5*/
+.cardtitlebottom{
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 30px 0 0 0;
+    color: #008297 !important;
+}
+
+/*Card title styling for generic card*/
+.cardtitlegeneric{
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 30px 0 0 0;
+    color: #40484a !important;
+}
+
+/*Card description styling*/
+.cardtext{
+    font-size: 12px;
+    color: #576366;
+    height: 120px;
+}
+
+/*Card buttons Styling*/
+.cardbutton{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /*Card headers flexing*/
-.cardheader{
+.cardheadertop{
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -289,8 +334,20 @@ main{
     color: white;
     font-size: 14px;
     font-family: sans-serif;
-    padding-left: 1px;
-    padding-right: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*Card headers styling for cards 4 & 5*/
+.cardheaderbottom{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #008297 !important;
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /*Styling for generic card header*/
@@ -305,6 +362,7 @@ main{
 .cardseal{
     border-radius: 50%;
     margin: -30px 0 -30px 0;
+    box-shadow: 1px 1px 10px 3px rgba(0,0,0,0.5);
 }
 
 /*Reduces seal sizes on small screens*/
