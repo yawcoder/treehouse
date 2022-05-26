@@ -261,9 +261,12 @@ main{
 
 /*Entire cards area div*/
 .carddiv{
-    background-color: #25332f;
-    padding: 50px 0 0 0;
+    background: url(https://static.teamtreehouse.com/assets/views/marketing/homepage/techdegree-pulses-b5260368794251735142d8995302536933dc144747f6707bded739f2b99f6cfb.svg) center top/contain no-repeat;
+    padding: 90px 0 60px 0;
     margin: 50px 0 0 0;
+}
+.carddiv2{
+    background-color: #3f4850 !important;
 }
 
 /*First text of card div*/
@@ -321,8 +324,53 @@ main{
 
 /*Card buttons Styling*/
 .cardbutton{
-    display: flex;
-    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+}
+.cardbutton1{
+    margin-right: 10px;
+    background: white !important;
+    border: solid 2px #e8ebed !important;
+    color: #576366 !important;
+    width: 40%;
+    height: 52px;
+    padding: 12px 0 10px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+.cardbutton1:hover{
+    cursor: pointer;
+    border-color: #bdc6cb !important;
+    text-decoration: none !important;
+}
+.cardbutton2{
+    margin-left: 10px;
+    background: linear-gradient(to bottom, #008298 0%, #007589 100%) !important;
+    border: solid 2px #e8ebed !important;
+    color: #fff !important;
+    width: 40%;
+    height: 52px;
+    padding: 12px 0 10px 0 ;
+    font-weight: bold;
+    font-size: 14px;
+}
+.cardbutton2:hover{
+    text-decoration: none !important;
+    cursor: pointer;
+    background: linear-gradient(#004652, #004652) !important;
+}
+
+@media(max-width: 952px){
+    .cardbutton1{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .cardbutton2{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
 }
 
 /*Card headers flexing*/
@@ -379,6 +427,7 @@ main{
 .cardsealgeneric{
     border-radius: 50%;
     margin: -30px auto;
+    box-shadow: 1px 1px 10px 3px rgba(0,0,0,0.5);
 }
 
 /*Reduces generic seal size on small screens*/
