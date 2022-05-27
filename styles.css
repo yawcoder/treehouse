@@ -252,6 +252,38 @@ main{
     }
 }
 
+/*Styling for homepage tabs*/
+.homepage-tabs{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto 5rem auto;
+    font-family: "Nunito", sans-serif;
+}
+.homepage-tabs a{
+    color: #576366;
+    border-bottom: 3px solid #e8ebed;
+    text-decoration: none !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-grow: 1;
+    padding: 2rem;
+    text-align: center;
+}
+.homepage-tabs a.active{
+    color: #007e92;
+    border-bottom: 3px solid #0098b1;
+    flex-grow: 1;
+    padding: 2rem;
+    text-decoration: none;
+}
+.homepage-tabs a:hover{
+    color: #007e92;
+    border-bottom: 3px solid #0098b1;
+    flex-grow: 1;
+    padding: 2rem;
+    text-decoration: none;
+}
+
 .clipartdiv{
     display: flex;
     justify-content: center;
