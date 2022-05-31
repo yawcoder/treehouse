@@ -284,11 +284,30 @@ main{
     text-decoration: none;
 }
 
-.clipartdiv{
+/*styling for SVG images*/
+.svgdiv{
     display: flex;
-    justify-content: center;
-    margin: 50px 0 0 0;
+    justify-content: space-between;
+    margin: 50px auto;
+}
 
+.svg{
+    margin: 0 50px 0 50px;
+}
+
+.svgp{
+    width: 70%;
+}
+
+/*Displays SVG images vertically on mobile*/
+@media(max-width: 780px){
+    .svgdiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .svg{
+        margin-top: 50px;
+    }
 }
 
 /*Entire cards area div*/
