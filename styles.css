@@ -284,6 +284,27 @@ main{
     text-decoration: none;
 }
 
+/*Makes homepage tabs disappear on mobile*/
+@media(max-width: 570px){
+    .homepage-tabs{
+        display: none;
+    }
+}
+
+/*Styling for video thumbnail and its paragraph*/
+.videodiv{
+    display: flex;
+    justify-content: space-between;
+}
+.video-p-div{
+    margin: 0 0 0 30px;
+    width: 40%;
+}
+.video-p-1{
+    font-size: 35px;
+    font-weight: bold;
+
+}
 /*styling for SVG images*/
 .svgdiv{
     display: flex;
