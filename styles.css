@@ -293,18 +293,24 @@ main{
 
 /*Styling for video thumbnail and its paragraph*/
 .videodiv{
-    display: flex;
-    justify-content: space-between;
+    margin-top: 100px;
 }
-.video-p-div{
-    margin: 0 0 0 30px;
-    width: 40%;
+.video{
+    max-width: 100%;
+    height: auto;
 }
+
 .video-p-1{
     font-size: 35px;
     font-weight: bold;
-
+    font-family: "Nunito", sans-serif;
+    color: #40484a;
 }
+.video-p-2{
+    color: #576366;
+    font-size: 1.125rem;
+}
+
 /*styling for SVG images*/
 .svgdiv{
     display: flex;
@@ -508,4 +514,30 @@ main{
     .cardsealgeneric{
         max-width: 80px;
     }
+}
+
+/*Styling for second group of svgs*/
+.svg-flex-2{
+    display: flex;
+    justify-content: space-between;
+}
+.svg-image{
+    max-width: 100%;
+    height: auto;
+}
+.svg-p-heading{
+    font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #40484a;
+}
+.svg-p{
+    color: #576366;
+    font-size: 0.9rem;
+}
+.svg-2-button-div{
+    margin: auto;
+}
+.svg-2-button{
+    margin: auto;
 }
