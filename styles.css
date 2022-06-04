@@ -105,9 +105,10 @@ nav ul li a:hover{
         height: 100vh;
         background: white;
         top: 80px;
-        left: -100%;
+        right: -100%;
         text-align: center;
         transition: all .5s;
+        margin-right: 0 !important;
     }
     nav ul li{
         display: block;
@@ -122,7 +123,7 @@ nav ul li a:hover{
         color: #0082e6;
     }
     #check:checked ~ ul{
-        left: 0;
+        right: 0;
     }
     /*Styling for freetrial button on mobile*/
     #freetrial{
