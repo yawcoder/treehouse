@@ -632,3 +632,70 @@ main{
     background-color: rgb(135, 91, 181);
     border-radius: 0px;
 }
+
+/*Styling for footer*/
+.footer{
+    background-color: #f6f9fa;
+}
+.footer .mid-col{
+    margin-right: 0.5rem;
+    padding: 0 2rem 0 2rem;
+    border-left: solid 2px #0098B1;
+    border-right: solid 2px #0098B1;
+}
+.footer-h5{
+    font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #3E474F;
+    height: 2rem;
+}
+.footer-link{
+    display: block;
+    font-size: 0.85rem;
+    text-decoration: none;
+    height: 2.5rem;
+    line-height: 1rem;
+    color: #3E474F;
+}
+.footer-link:hover{
+    color: #3E474F;
+    text-decoration: underline;
+}
+.full-cat{
+    color: #3E474F;
+}
+
+/*Social Icons*/
+.social{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-icon{
+    color: #3E474F;
+    font-size: 27px;
+}
+
+/*Legal and Copyright*/
+.legal{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.legal a{
+    color: #3E474F;
+    text-decoration: none;
+    font-size: 15px;
+}
+.legal a:hover{
+    text-decoration: underline;
+}
+.copyright{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
