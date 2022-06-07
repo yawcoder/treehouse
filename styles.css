@@ -569,6 +569,72 @@ main{
     color: white !important;
 }
 
+/*Q & A*/
+.faq{
+    padding: 50px 14px 10px 20px;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #576366;
+}
+
+/*FAQs accordion*/
+.accordion{
+    margin: auto;
+    font-family: "Nunito", sans-serif;
+    background: #f6f9fa;
+    padding: 50px 60px;
+}
+
+.accordion__label, .accordion__content{
+    padding: 14px 20px;
+}
+
+.accordion__label{
+    display: block;
+    color: #576366;
+    font-size: 1.1rem;
+    line-height: 2.5;
+    font-weight: bold;
+    border-bottom: solid 2px #d4d9dd;
+    padding: 1.5rem 0;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+}
+
+.accordion__label::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%2300000099;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+}
+
+.accordion__content{
+    color: #576366;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+.accordion__input{
+    display: none;
+}
+
+.accordion__input:checked ~ .accordion__content{
+    display: block;
+}
+
+.accordion__input:checked ~ .accordion__label::after{
+    transform: translateY(-50%) rotate(0.5turn);
+}
+
 /*Thin Color bar flexing and styling*/
 .bar-flex{
     display: flex;
